@@ -28,36 +28,76 @@ body {
 
 /*main content styles*/
 .main-content {
-  margin-top: 65px;
   box-shadow: 0px 0px 14px #354035;
-  border-radius: 0 0 5px 5px;
 }
 .main-content #about {
+  padding: 90px 2% 2% 2%;
   background-color: #dcc49c;
-  padding: 2%;
 }
 .main-content #about img {
   box-shadow: 0px 0px 14px #354035;
   width: 70%;
   border-radius: 50%;
+  margin: 0 auto;
+}
+.main-content #about p {
+  padding-top: 60px;
 }
 .main-content #portfolio {
   background-color: #dee5c3;
+  padding-top: 30px;
 }
 .main-content #portfolio img {
   margin-bottom: 15px;
   opacity: .65;
 }
-.main-content #portfolio h1 {
-  color: #354035;
-  font-weight: bold;
-  line-height: 2;
+.main-content #contact {
+  padding-bottom: 100px;
+  padding-top: 30px;
 }
-.main-content #contact .well {
-  min-height: 500px;
+.main-content #contact .control-label, .main-content #contact .form-control {
+  color: #7e7e7e;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 2px;
 }
 .main-content p {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.5;
+}
+.main-content h1 {
+  color: #354035;
+  font-weight: bold;
+  line-height: 2;
+}
+.main-content .btn.btn-default {
+  font-size: 16px;
+  color: coral;
+  background-color: #c0dac2;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 2% 8%;
+  border: none;
+}
+.main-content .btn.btn-default:hover, .main-content .btn.btn-default:focus {
+  outline: none;
+  border: none;
+}
+
+footer {
+  background-color: #2f1c2f;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  color: coral;
+}
+footer .social-networks {
+  margin-top: 5px;
+}
+footer .social-networks a {
+  color: coral;
+}
+footer .social-networks a:hover {
+  opacity: .7;
 }

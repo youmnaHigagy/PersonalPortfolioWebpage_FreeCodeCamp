@@ -10,7 +10,7 @@ $Color2DarkSpecial:rgb(184, 208, 185);
 body {
   background-color: $Color1Light;
   color: $Color2Dark;
-  font-family:tahoma;
+  font-family: tahoma;
 }
 
 
@@ -37,39 +37,79 @@ body {
   }
 }
 
+
 /*main content styles*/
 
 .main-content {
-  margin-top: 65px;
   box-shadow: 0px 0px 14px $Color2Dark;
-  border-radius: 0 0 5px 5px;
   #about {
+    padding: 90px 2% 2% 2%;
     background-color: $Color1Darkspecial;
-    padding: 2%;
     img {
       box-shadow: 0px 0px 14px $Color2Dark;
       width: 70%;
       border-radius: 50%;
+      margin: 0 auto;
+    }
+    p{
+      padding-top: 60px;
     }
   }
   #portfolio {
-    background-color:$Color2LightSpecial;
+    background-color: $Color2LightSpecial;
+    padding-top: 30px;
     img {
       margin-bottom: 15px;
       opacity: .65;
     }
-    h1{
-            color: $Color2Dark;
-      font-weight:bold;
-      line-height: 2;
+  }
+  #contact {
+    padding-bottom:100px;
+    padding-top:30px;
+    .control-label,.form-control{
+    color:#7e7e7e;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 2px;    
     }
+
   }
-  #contact .well {
-    min-height: 500px
-  }
+  
   p {
     font-weight: bold;
     font-size: 18px;
     line-height: 1.5;
   }
+  h1 {
+    color: $Color2Dark;
+    font-weight: bold;
+    line-height: 2;
+  }
+  .btn.btn-default{
+    font-size: 16px;
+    color: $Color1Dark;
+    background-color: $Color2Light;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 2% 8%;
+    border:none;
+    &:hover,&:focus{
+      outline:none;
+      border:none;
+    }
+  }
 }
+footer{
+  background-color: #2f1c2f;
+  padding: 10px;
+  font-size: 12px;
+  text-align:center;
+  color:$Color1Dark;
+  .social-networks{
+    margin-top:5px;
+    a{
+      color:$Color1Dark;
+      &:hover{opacity:.7;}
+    }
+  }
+  }
