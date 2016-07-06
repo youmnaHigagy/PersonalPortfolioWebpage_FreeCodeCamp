@@ -1,0 +1,75 @@
+// orange
+$Color1Light:rgb(255, 241, 217);
+$Color1Dark:coral;
+$Color1Darkspecial:rgb(220, 196, 156);
+// green
+$Color2Light:#c0dac2;
+$Color2Dark:#354035;
+$Color2LightSpecial:rgb(222, 229, 195);
+$Color2DarkSpecial:rgb(184, 208, 185);
+body {
+  background-color: $Color1Light;
+  color: $Color2Dark;
+  font-family:tahoma;
+}
+
+
+/*header styles*/
+
+.navbar-default {
+  background-color: $Color2Light;
+  border-color: $Color2Dark;
+  box-shadow: 0px 1px 5px $Color2Dark;
+  min-height: 65px;
+  min-height: 65px;
+  .navbar-brand {
+    color: $Color1Dark !important;
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .navbar-nav a {
+    color: $Color1Dark !important;
+  }
+  li.active>a {
+    background-color: $Color2DarkSpecial !important;
+    height: 65px;
+  }
+}
+
+/*main content styles*/
+
+.main-content {
+  margin-top: 65px;
+  box-shadow: 0px 0px 14px $Color2Dark;
+  border-radius: 0 0 5px 5px;
+  #about {
+    background-color: $Color1Darkspecial;
+    padding: 2%;
+    img {
+      box-shadow: 0px 0px 14px $Color2Dark;
+      width: 70%;
+      border-radius: 50%;
+    }
+  }
+  #portfolio {
+    background-color:$Color2LightSpecial;
+    img {
+      margin-bottom: 15px;
+      opacity: .65;
+    }
+    h1{
+            color: $Color2Dark;
+      font-weight:bold;
+      line-height: 2;
+    }
+  }
+  #contact .well {
+    min-height: 500px
+  }
+  p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
